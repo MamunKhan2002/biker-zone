@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -17,8 +18,9 @@
                         clifford: '#da373d',
                         'orange-color': '#E76F51',
                         'hero-color': '#E76F511A',
-                        'happy-client': '#6C6C6C',
-                        'border-color': '#DEDEDE'
+                        'happy-client': '#DEDEDE',
+                        'border-color': '#D5E5FB',
+                        'Default-Black': '#0B0D17'
                     }
                 }
             }
@@ -64,6 +66,7 @@
         </nav>
     </header>
     <main class="w-11/12 lg:max-w-7xl mx-auto">
+        <!-- Slide section start -->
         <section class="mt-14">
             <div class="carousel w-full rounded-lg">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -140,6 +143,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Feature bike this year -->
         <section>
             <h3 class="text-4xl lg:text-5xl font-semibold text-center mt-32 capitalize">Fetured Bikes In This Year
@@ -156,7 +160,7 @@
         <section>
             <h3 class="text-4xl lg:text-5xl font-semibold text-center mt-32 mb-12 capitalize">latest News</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="card bg-base-100 border-solid border-2 border-border-color">
+                <div class="card bg-base-100 shadow-md">
                     <figure class="px-10 pt-10">
                         <img src="./images/others/latest1.png" alt="latest1" class="rounded-xl w-full" />
                     </figure>
@@ -171,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 border-solid border-2 border-border-color">
+                <div class="card bg-base-100 shadow-md">
                     <figure class="px-10 pt-10">
                         <img src="./images/others/latest2.png" alt="latest1" class="rounded-xl w-full" />
                     </figure>
@@ -186,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 border-solid border-2 border-border-color">
+                <div class="card bg-base-100 shadow-md">
                     <figure class="px-10 pt-10">
                         <img src="./images/others/latest3.png" alt="latest1" class="rounded-xl w-full" />
                     </figure>
@@ -271,6 +275,7 @@
                 </div>
             </div>
         </section>
+
         <!-- FAQ section start -->
         <section>
             <h3 class="text-4xl lg:text-5xl font-semibold text-center mt-32 mb-12 capitalize">Frequently Asked <span
@@ -331,8 +336,33 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer pt-14 pb-20 px-40 bg-Default-Black text-neutral-content justify-between mt-36">
+        <aside>
+            <div class="space-x-6 mb-3">
+                <a href="#">Download Now</a>
+                <a href="#">License</a>
+            </div>
+            <div class="space-x-6 mb-6">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Careers</a>
+                <a href="#">Help</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <small>© 2020 bike. All rights reserved</small>
+        </aside>
+        <nav class="w-28">
+            <header class="footer-title">Get the App</header>
+            <div class="grid grid-cols-1 gap-4">
+                <div>
+                    <img src="./images/others/android.png" alt="android.png" class="w-4/4">
+                </div>
+                <div>
+                    <img src="./images/others/ios.png" alt="ios.png" class="w-4/4">
+                </div>
+            </div>
+        </nav>
     </footer>
 </body>
 
